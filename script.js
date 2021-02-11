@@ -10,18 +10,20 @@ for (i = 0; i < amount * amount; i++) {
     function hoverin()
 {
    box.setAttribute("style", "background-color:black;")
-   box.classList.add("hover")
 }
     let amountPx = "repeat(" + amount + ", auto)";
     container.style.gridTemplateColumns = amountPx;
-    console.log(amountPx);
     container.appendChild(box);
 }
 }
 
 function askAmount() {
-let gridNum = window.prompt("Pressing OK will reset the grid. Please specify how many squares per side.", "16");
+let gridNum = window.prompt("Reset with how many squares per side? (16-100)", "16");
 parseInt(gridNum);
+if (gridNum > 100 || gridNum < 16 || isNaN(gridNum)) {
+    window.alert("Please enter a number between 16 and 100");
+    return;
+}
 
 while (container.hasChildNodes()) {  
     container.removeChild(container.firstChild);

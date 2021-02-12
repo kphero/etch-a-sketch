@@ -1,9 +1,36 @@
+.etchbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 57, 57);
+    height: 650px;
+    width: 750px;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+
+.titlecon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    padding: 1rem;
+    margin-top: -7rem;
+    margin-bottom: 0rem;
+    font-family: 'Arizonia', cursive;
+    font-size: 4rem;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(16, auto);
-    border: 0.1px solid black;
-    height: 500px;
+    border: 1px solid black;
+    height: 400px;
     width: 500px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .grid {
@@ -16,10 +43,14 @@
     background-color: black;
 }
 
-.reset {
-    height: 2rem;
-    width: 4rem;
-    margin-bottom: 2rem;
+.etchbutton {
+    background-color: white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 1rem;
+    align-self: flex-end;
+    box-shadow: 2px 2px black;
 }
 
 main {
@@ -27,4 +58,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    background-image: url(cloud.png);
+    height: 100%;
+    width: 100%;
 }

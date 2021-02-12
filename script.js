@@ -30,7 +30,6 @@ removeGrid()
 createGrid(gridNum);
 }
 
-
 function resetGrid() {
     removeGrid()
     createGrid(newGrid);
@@ -42,9 +41,6 @@ while (container.hasChildNodes()) {
     }
 }
 
-
-
 createGrid(newGrid);
-
 gridsize.addEventListener('click', askAmount)
 resetbutton.addEventListener('click', resetGrid)

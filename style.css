@@ -7,7 +7,7 @@
     height: 650px;
     width: 750px;
     border-radius: 10px;
-    box-shadow: 5px 5px black;
+    box-shadow: 0 0 5px black;
 }
 
 .titlecon {
@@ -31,6 +31,7 @@
     width: 500px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: inset 0 0 2px black;
 }
 
 .grid {
@@ -50,7 +51,7 @@
     border-radius: 50%;
     margin: 1rem;
     align-self: flex-end;
-    box-shadow: 2px 2px black;
+    box-shadow: 0 0 2px black;
 }
 
 main {
